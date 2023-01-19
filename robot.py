@@ -1,8 +1,11 @@
-class robot:
-    def __init__(self, name, Weapon) -> None:
-        self.name = name
-        self.health = '100'
-        self.active_weapon = Weapon
+from weapon import weapon
+from dinosaur import dinosaur
 
-    def attack(self, dinosaur):
-        self.dinosaur = dinosaur
+class robot:
+    def __init__(self, name) -> None:
+        self.name = name
+        self.health = 100
+        self.active_weapon = weapon()
+
+    def attack(self):
+        self.dinosaur = dinosaur()

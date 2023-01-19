@@ -5,4 +5,4 @@ class robot:
         self.active_weapon = Weapon
 
     def attack(self, dinosaur):
-        self.dinosaur = []
+        self.dinosaur = dinosaur

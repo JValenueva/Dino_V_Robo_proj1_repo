@@ -2,8 +2,7 @@ from robot import robot
 from dinosaur import dinosaur
 
 class battlefield:
-    def __init__(self) -> None:
-
+    def __init__(self):
 
     def run_game(self):
 
@@ -12,4 +11,4 @@ class battlefield:
     def battle_phase(self):
 
     def display_winner(self):
-        
+

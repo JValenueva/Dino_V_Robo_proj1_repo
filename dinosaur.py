@@ -1,3 +1,5 @@
+from robot import robot
+
 class dinosaur:
     def __init__(self, name, attack_power):
         self.name = name

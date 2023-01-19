@@ -10,4 +10,6 @@ class battlefield:
     def display_welcome(self):
 
     def battle_phase(self):
+
+    def display_winner(self):
         

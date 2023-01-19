@@ -1,3 +1,5 @@
 class robot:
     def __init__(self) -> None:
-        pass
+        self.name = 
+        self.health = 
+        self.active_weapon = 

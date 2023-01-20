@@ -1,10 +1,13 @@
 from robot import robot
+Robot = robot()
 
 class dinosaur:
-    def __init__(self, name, attack_power):
-        self.name = name
-        self.attack_power = attack_power
+    def __init__(self):
+        self.name = 'Riot'
+        self.attack_power = 25
         self.health = 100
 
-    def attack(self, robot):
-        self.robot = robot
+    def attack(self):
+        print(f'{dinosaur.name} dealt {self.attack_power} to {Robot.name}!')
+        self.robot_blow = Robot.health - self.attack_power
+        print(f'{Robot.name} has {self.robot_blow} health remaining!')

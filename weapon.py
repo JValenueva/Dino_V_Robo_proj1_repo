@@ -1,4 +1,4 @@
 class weapon:
-    def __init__(self, name, attack_power):
-        self.name = name
-        self.attack_power = attack_power
+    def __init__(self):
+        self.name = 'Spear of Oden'
+        self.attack_power = 30

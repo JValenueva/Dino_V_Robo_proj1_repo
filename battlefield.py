@@ -1,5 +1,5 @@
-from robot import robot
-from dinosaur import dinosaur
+from Robot import robot
+from Dinosaur import dinosaur
 list_1 = ['robot', 'dinosaur']
 
 class battlefield:
@@ -10,13 +10,21 @@ class battlefield:
     def display_welcome(self):
         print('Welcome to Robots vs. Dinosaurs Simulator')
 
-    def run_game(self):
+    def run_game_1(self):
         import random
-        first_pick = random.choice(list_1)
-        if first_pick == 'robot':
+        random.choice(list_1)
+        return random
+    verdict = run_game_1(list_1)
+
+    def run_game(self, verdict):
+        if verdict == 'robot':
             print(f'{self.Robot.name} will have first move on the battlefield!')
-        elif first_pick == 'dinosaur':
+            while self.Dinosaur.health != 0:
+                self.Robot.attack
+        elif verdict == 'dinosaur':
             print(f'{self.Dinosaur.name} will have the first move on the battlefield!')
+            while self.Robot.health != 0:
+                self.Dinosaur.attack
         
         
     def battle_phase(self):

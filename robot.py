@@ -1,4 +1,4 @@
-from dinosaur import dinosaur
+from Dinosaur import dinosaur
 from weapon import weapon
 Dinosaur = dinosaur()
 

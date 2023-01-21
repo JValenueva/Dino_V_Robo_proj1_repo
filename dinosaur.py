@@ -1,4 +1,4 @@
-from robot import robot
+from Robot import robot
 Robot = robot()
 
 class dinosaur:

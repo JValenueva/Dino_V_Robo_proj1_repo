@@ -8,4 +8,5 @@ class dinosaur:
 
     def attack(self, robot):
         self.enemy = robot - self.attack_power
+        self.health = self.enemy
         return self.enemy

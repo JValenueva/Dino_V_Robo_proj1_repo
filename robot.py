@@ -2,7 +2,7 @@ from weapon import weapon
 
 class robot:
     def __init__(self):
-        self.name = 'Dozer'
+        self.name = ''
         self.health = 100
         self.active_weapon = weapon()
 

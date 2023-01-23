@@ -1,4 +1,4 @@
 from battlefield import battlefield
 
-battlefield_one = battlefield()
-battlefield_one.run_game()
+battlefield_one = battlefield('brother bot', 'ancient', 'spear')
+battlefield_one.display_welcome

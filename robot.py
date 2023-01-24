@@ -7,7 +7,6 @@ class robot:
         self.active_weapon = weapon('spear', 30)
 
     def attack(self, dinosaur):
-        self.enemy_dinosaur = dinosaur
-        self.enemy_dinosaur -= self.active_weapon.attack_power
+        dinosaur.health -= self.active_weapon.attack_power
         
         

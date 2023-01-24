@@ -5,7 +5,7 @@ from Dinosaur import dinosaur
 class battlefield:
     def __init__(self):
         self.Robot = robot('brother bot')
-        self.Dinosaur = dinosaur('ancient', 25)
+        self.Dinosaur = dinosaur('ancient', 20)
         pass
 
     def run_game(self):
@@ -30,16 +30,12 @@ class battlefield:
             print(f'{self.Dinosaur.name} landed a blow on {self.Robot.name} and dealt {self.Dinosaur.attack_power} damage!')
             print(f'{self.Robot.name} has {self.Robot.health} remaining!')
             print(' ')
-
-            if self.Dinosaur.health == 0:
-                print(f'{self.Dinosaur.name} has fallen to {self.Robot.name}!')
+            if self.Dinosaur.health <= 0 or self.Robot.health <= 0:
+                print(f'A giant has fallen! The battle has concluded!')
                 break
-            elif self.Robot.health == 0:
-                print(f'{self.Robot.name} has fallen to {self.Dinosaur.name}!')
-                break
-
+            
     def display_winner(self):
-        if self.Dinosaur.health == 0:
+        if self.Dinosaur.health <= 0:
             print(f'The last one standing on the battlefield is {self.Dinosaur.name}!')
-        elif self.Robot.health == 0:
+        elif self.Robot.health <= 0:
             print(f'The last one standing on the battlefield is {self.Robot.name}!')
